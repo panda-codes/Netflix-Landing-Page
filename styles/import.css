@@ -1,0 +1,63 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  background: url("/images/zjgs096khv591.webp") no-repeat center center/cover;
+  color: #f4f4f4;
+}
+header nav {
+  padding: 0px 30px;
+  margin: 0px auto;
+}
+header nav #navimg {
+  text-align: center;
+}
+header nav #navimg img {
+  padding-top: 10px;
+}
+header nav #navbtn {
+  text-align: right;
+}
+header .btn1 {
+  background-color: red;
+  color: #f4f4f4;
+  width: 120px;
+  height: 40px;
+}
+header .btn1:hover {
+  background-color: #ff6666;
+}
+header #main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 400px;
+}
+header #main #mainshowcase {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+header #main #mainshowcase h1 {
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
+header #main #mainshowcase p {
+  margin-bottom: 10px;
+}
+header #main #mainshowcase a {
+  text-decoration: none;
+  color: #f4f4f4;
+  text-align: center;
+  background-color: red;
+  width: 250px;
+  height: 40px;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+}/*# sourceMappingURL=import.css.map */

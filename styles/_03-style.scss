@@ -1,0 +1,73 @@
+// GENERAL SETTINGS
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+// END OF GENERAL SETTINGS
+
+body{
+    // height: 100vh;
+}
+
+
+header{
+    background: url('/images/zjgs096khv591.webp') no-repeat center center/cover;
+    color: $secondaryColor;
+
+    nav{
+        @include container();
+        // background-color: aqua;
+
+        #navimg{
+            text-align: center;
+
+            img{
+                padding-top: 10px;
+            }
+        }
+
+        #navbtn{
+            text-align: right;
+        }
+    }
+
+    .btn1{
+        // text-align: ;
+        @include btn();
+    }
+
+    #main{
+        @include dflex(column,center,center);
+        // @include container();
+        // background-color: blue;
+        min-height: 400px;
+    
+        #mainshowcase{
+            @include dflex(column,center,center);
+    
+            h1{
+                margin-bottom: 10px;
+                text-transform: uppercase;
+            }
+    
+            p{
+                margin-bottom: 10px;
+            }
+    
+            a{
+                text-decoration: none;
+                color: $secondaryColor;
+                text-align: center;
+                background-color: $primaryColor;
+                width: 250px;
+                height: 40px;
+                padding: 10px;
+                border: none;
+                border-radius: 5px;
+            }
+        }
+    }
+}
+
+

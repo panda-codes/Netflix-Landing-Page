@@ -1,0 +1,24 @@
+@mixin container(){
+    // width: 1110px;
+    padding: 0px 30px;
+    margin: 0px auto;
+}
+
+@mixin dflex($direction,$jc,$ai){
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $jc;
+    align-items: $ai;
+}
+
+@mixin btn(){
+    background-color: $primaryColor;
+    color: $secondaryColor;
+    width: 120px;
+    height: 40px;
+    // border-radius: 30px;
+
+    &:hover{
+        background-color: lighten($color: $primaryColor, $amount: 20%);
+    }
+}
