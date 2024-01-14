@@ -4,9 +4,28 @@
   box-sizing: border-box;
 }
 
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 15px;
+  background: #000;
+}
+
 header {
   background: url("/images/zjgs096khv591.webp") no-repeat center center/cover;
   color: #f4f4f4;
+  height: 93dvh;
+  position: relative;
+}
+header::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 1;
+  box-shadow: inset 120px 100px 250px #000000;
 }
 header nav {
   padding: 0px 30px;
@@ -14,50 +33,66 @@ header nav {
 }
 header nav #navimg {
   text-align: center;
+  position: relative;
+  z-index: 2;
 }
 header nav #navimg img {
   padding-top: 10px;
 }
-header nav #navbtn {
-  text-align: right;
-}
-header .btn1 {
-  background-color: red;
+header nav #navimg .btn1 {
+  background-color: #e50914;
   color: #f4f4f4;
-  width: 120px;
-  height: 40px;
+  width: 80px;
+  height: 35px;
+  font-weight: 700;
+  border: none;
+  border-radius: 2px;
+  cursor: pointer;
+  outline: none;
+  box-shadow: 1px 3px 5px black;
+  margin-top: 10px;
+  position: absolute;
+  right: 0px;
 }
-header .btn1:hover {
-  background-color: #ff6666;
+header nav #navimg .btn1:hover {
+  background-color: #f95b63;
 }
 header #main {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  min-height: 400px;
+  min-height: 80%;
 }
 header #main #mainshowcase {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  z-index: 2;
 }
 header #main #mainshowcase h1 {
   margin-bottom: 10px;
-  text-transform: uppercase;
+  font-size: 5.2rem;
+  line-height: 1.1;
+  margin: 0 0 2rem;
 }
 header #main #mainshowcase p {
+  text-transform: uppercase;
   margin-bottom: 10px;
+  color: #f4f4f4;
+  font-weight: 400;
+  font-size: 1.9rem;
+  line-height: 1.2;
+  margin: 0 0 2rem;
 }
 header #main #mainshowcase a {
+  font-size: 1.5rem;
   text-decoration: none;
   color: #f4f4f4;
   text-align: center;
-  background-color: red;
-  width: 250px;
-  height: 40px;
-  padding: 10px;
+  background-color: #e50914;
+  padding: 0.8rem 1.3rem;
   border: none;
   border-radius: 5px;
 }/*# sourceMappingURL=import.css.map */

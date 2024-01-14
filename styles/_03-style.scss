@@ -8,61 +8,90 @@
 
 body{
     // height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    background: #000;
 }
 
 
 header{
     background: url('/images/zjgs096khv591.webp') no-repeat center center/cover;
     color: $secondaryColor;
+    height: 93dvh;
+    position: relative;
+
+    &::after{
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba($color: #000000, $alpha: 0.6);
+        z-index: 1;
+        box-shadow: inset 120px 100px 250px #000000;
+    }
 
     nav{
         @include container();
-        // background-color: aqua;
 
         #navimg{
             text-align: center;
+            position: relative;
+            z-index: 2;
+
+            
 
             img{
                 padding-top: 10px;
             }
-        }
 
-        #navbtn{
-            text-align: right;
+            .btn1{
+                @include btn();
+                margin-top: 10px;
+                position: absolute;
+                right: 0px;
+            }
         }
     }
 
-    .btn1{
-        // text-align: ;
-        @include btn();
-    }
 
     #main{
         @include dflex(column,center,center);
         // @include container();
         // background-color: blue;
-        min-height: 400px;
+        min-height: 80%;
     
         #mainshowcase{
             @include dflex(column,center,center);
+            z-index: 2;
     
             h1{
                 margin-bottom: 10px;
-                text-transform: uppercase;
+                font-size: 5.2rem;
+                line-height: 1.1;
+                margin: 0 0 2rem;
             }
     
             p{
+                text-transform: uppercase;
                 margin-bottom: 10px;
+                color: $secondaryColor;
+                font-weight: 400;
+                font-size: 1.9rem;
+                line-height: 1.2;
+                margin: 0 0 2rem;
             }
     
-            a{
+            a{ 
+                font-size: 1.5rem;
                 text-decoration: none;
                 color: $secondaryColor;
                 text-align: center;
                 background-color: $primaryColor;
-                width: 250px;
-                height: 40px;
-                padding: 10px;
+                // width: 300px;
+                // height: 40px;
+                padding: 0.8rem 1.3rem;
                 border: none;
                 border-radius: 5px;
             }
