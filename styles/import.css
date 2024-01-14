@@ -95,4 +95,31 @@ header #main #mainshowcase a {
   padding: 0.8rem 1.3rem;
   border: none;
   border-radius: 5px;
+}
+
+.first {
+  background: #141414;
+  border-bottom: 4px solid gray;
+}
+.first .selection {
+  width: 70%;
+  padding: 0px 30px;
+  margin: 0px auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  background: #141414;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  color: gray;
+}
+.first .selection .card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.first .selection .card i {
+  margin-bottom: 5px;
 }/*# sourceMappingURL=import.css.map */

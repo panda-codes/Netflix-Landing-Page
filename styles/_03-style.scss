@@ -89,8 +89,6 @@ header{
                 color: $secondaryColor;
                 text-align: center;
                 background-color: $primaryColor;
-                // width: 300px;
-                // height: 40px;
                 padding: 0.8rem 1.3rem;
                 border: none;
                 border-radius: 5px;
@@ -98,5 +96,27 @@ header{
         }
     }
 }
+// DONE WITH HEADER
 
+// FIRST SECTION & CARDS
+.first{
+    background: lighten($color: $tertiaryColor, $amount: 8%);
+    border-bottom: 4px solid gray;
 
+    .selection{
+        @include container2();
+        @include dflex(row,space-around,center);
+        background: lighten($color: $tertiaryColor, $amount: 8%);
+        padding-top: 30px;
+        padding-bottom: 30px;
+        color: gray;
+
+        .card{
+            @include dflex(column,center,center);
+
+            i{
+                margin-bottom: 5px;
+            }
+        }
+    }
+}
