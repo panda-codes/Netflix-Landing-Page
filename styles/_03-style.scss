@@ -106,12 +106,13 @@ header{
     .selection{
         @include container2();
         @include dflex(row,space-around,center);
-        background: lighten($color: $tertiaryColor, $amount: 8%);
+        // background: lighten($color: $tertiaryColor, $amount: 8%);
         padding-top: 30px;
         padding-bottom: 30px;
         color: gray;
+        border-bottom: 4px solid $primaryColor;
 
-        .card{
+        .card {
             @include dflex(column,center,center);
 
             i{
@@ -119,4 +120,39 @@ header{
             }
         }
     }
+}
+
+.second{
+    .selection{
+        @include container2();
+        @include dflex(row,space-around,center);
+        // background: lighten($color: $tertiaryColor, $amount: 8%);
+        padding-top: 30px;
+        padding-bottom: 30px;
+        color: gray;
+    }
+}
+
+
+/* Text Styles */
+.text-xl {
+	font-size: 2rem;
+}
+
+.text-lg {
+	font-size: 1.8rem;
+	margin-bottom: 1rem;
+}
+
+.text-md {
+	// margin-bottom: 1.5rem;
+	font-size: 1.2rem;
+}
+
+.text-center {
+	text-align: center;
+}
+
+.text-dark {
+	color: #999;
 }

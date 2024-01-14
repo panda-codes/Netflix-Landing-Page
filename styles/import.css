@@ -109,10 +109,10 @@ header #main #mainshowcase a {
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
-  background: #141414;
   padding-top: 30px;
   padding-bottom: 30px;
   color: gray;
+  border-bottom: 4px solid #e50914;
 }
 .first .selection .card {
   display: flex;
@@ -122,4 +122,39 @@ header #main #mainshowcase a {
 }
 .first .selection .card i {
   margin-bottom: 5px;
+}
+
+.second .selection {
+  width: 70%;
+  padding: 0px 30px;
+  margin: 0px auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  color: gray;
+}
+
+/* Text Styles */
+.text-xl {
+  font-size: 2rem;
+}
+
+.text-lg {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+
+.text-md {
+  font-size: 1.2rem;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-dark {
+  color: #999;
 }/*# sourceMappingURL=import.css.map */
