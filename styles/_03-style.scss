@@ -92,6 +92,10 @@ header{
                 padding: 0.8rem 1.3rem;
                 border: none;
                 border-radius: 5px;
+
+                &:hover{
+                    background-color: rgba($color: $primaryColor, $alpha: 0.69);
+                }
             }
         }
     }
@@ -105,18 +109,29 @@ header{
 
     .selection{
         @include container2();
-        @include dflex(row,space-around,center);
-        // background: lighten($color: $tertiaryColor, $amount: 8%);
-        padding-top: 30px;
-        padding-bottom: 30px;
+        @include dflex(row,space-between,center);
         color: gray;
-        border-bottom: 4px solid $primaryColor;
+        // border-bottom: 4px solid $primaryColor;
 
+        .cancel{
+            border-bottom: 4px solid $primaryColor;
+        }
+        
         .card {
             @include dflex(column,center,center);
+            // height: 100%;
+            width: 40%;
+            padding-top: 2rem;
+            padding-bottom: 2rem;
+            
+            &:hover{
+                color: $secondaryColor;
+                cursor: pointer;
+            }
 
             i{
                 margin-bottom: 5px;
+
             }
         }
     }
@@ -125,11 +140,29 @@ header{
 .second{
     .selection{
         @include container2();
-        @include dflex(row,space-around,center);
         // background: lighten($color: $tertiaryColor, $amount: 8%);
         padding-top: 30px;
         padding-bottom: 30px;
         color: gray;
+
+        .tab-1-content-inner{
+            @include dflex(row,space-around,center);
+        }
+
+        a{ 
+            font-size: 1rem;
+            text-decoration: none;
+            color: $secondaryColor;
+            text-align: center;
+            background-color: $primaryColor;
+            padding: 1rem 1.3rem;
+            border: none;
+            border-radius: 5px;
+
+            &:hover{
+                background-color: rgba($color: $primaryColor, $alpha: 0.69);
+            }
+        }
     }
 }
 
@@ -141,7 +174,7 @@ header{
 
 .text-lg {
 	font-size: 1.8rem;
-	margin-bottom: 1rem;
+	margin-bottom: 2rem;
 }
 
 .text-md {

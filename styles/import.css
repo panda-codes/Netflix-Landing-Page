@@ -55,7 +55,7 @@ header nav #navimg .btn1 {
   right: 0px;
 }
 header nav #navimg .btn1:hover {
-  background-color: #f95b63;
+  background-color: rgba(229, 9, 20, 0.69);
 }
 header #main {
   display: flex;
@@ -96,6 +96,9 @@ header #main #mainshowcase a {
   border: none;
   border-radius: 5px;
 }
+header #main #mainshowcase a:hover {
+  background-color: rgba(229, 9, 20, 0.69);
+}
 
 .first {
   background: #141414;
@@ -107,11 +110,11 @@ header #main #mainshowcase a {
   margin: 0px auto;
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
-  padding-top: 30px;
-  padding-bottom: 30px;
   color: gray;
+}
+.first .selection .cancel {
   border-bottom: 4px solid #e50914;
 }
 .first .selection .card {
@@ -119,6 +122,13 @@ header #main #mainshowcase a {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  width: 40%;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+.first .selection .card:hover {
+  color: #f4f4f4;
+  cursor: pointer;
 }
 .first .selection .card i {
   margin-bottom: 5px;
@@ -128,13 +138,28 @@ header #main #mainshowcase a {
   width: 70%;
   padding: 0px 30px;
   margin: 0px auto;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  color: gray;
+}
+.second .selection .tab-1-content-inner {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
-  padding-top: 30px;
-  padding-bottom: 30px;
-  color: gray;
+}
+.second .selection a {
+  font-size: 1rem;
+  text-decoration: none;
+  color: #f4f4f4;
+  text-align: center;
+  background-color: #e50914;
+  padding: 1rem 1.3rem;
+  border: none;
+  border-radius: 5px;
+}
+.second .selection a:hover {
+  background-color: rgba(229, 9, 20, 0.69);
 }
 
 /* Text Styles */
@@ -144,7 +169,7 @@ header #main #mainshowcase a {
 
 .text-lg {
   font-size: 1.8rem;
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
 }
 
 .text-md {
