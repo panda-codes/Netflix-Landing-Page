@@ -3,8 +3,15 @@
     padding: 0px 30px;
     margin: 0px auto;
 }
+
 @mixin container2(){
     width: 70%;
+    padding: 0px 30px;
+    margin: 0px auto;
+}
+
+@mixin container3(){
+    width: 75%;
     padding: 0px 30px;
     margin: 0px auto;
 }
